@@ -48,7 +48,7 @@ RUN wget https://github.com/jvmkit/Wiki-in-box/releases/download/trojan/trojan2.
 ## 下载并执行Cloudflare的cloudflared
 RUN wget https://github.com/cloudflare/cloudflared/releases/download/2024.6.1/cloudflared-linux-amd64 -O /usr/local/bin/cloudflared && \
     chmod +x /usr/local/bin/cloudflared && \
-    echo '#!/bin/bash\n/usr/local/bin/cloudflared tunnel --no-autoupdate run --token eyJhIjoiZjliNWRjOTQwMmI5M2IyZDhkMzNiZWQwMWI3MDhkOWUiLCJ0IjoiYjU1Y2UyODMtMjlkNy00NDllLWJmZGMtYjMyYTUyYjFkNGE4IiwicyI6IlpqVTRaVEpoTVRBdE4yWmhZeTAwTlRVNExUZ3hNV1l0WmpkbFpXUTNZek15TkRabSJ9' > /usr/local/bin/run_cloudflared.sh && \
+    echo '#!/bin/bash\n/usr/local/bin/cloudflared tunnel --no-autoupdate run --token eyJhIjoiZjliNWRjOTQwMmI5M2IyZDhkMzNiZWQwMWI3MDhkOWUiLCJ0IjoiN2VkMWVmOTUtYmRhNi00MGVhLTgzZDgtMDlhNWQ5YjI5NzEyIiwicyI6Ill6UTBORFUyTW1ZdFl6UmhaaTAwTjJObUxXSTRaamt0Tm1Oa1lUa3haRGhoT1RrNCJ9' > /usr/local/bin/run_cloudflared.sh && \
     chmod +x /usr/local/bin/run_cloudflared.sh
 
 # 创建Web服务器目录和一个简单的HTML文件
